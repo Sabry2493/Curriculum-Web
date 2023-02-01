@@ -1,0 +1,573 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Dancing Script', cursive;
+}
+html{
+    scroll-behavior: smooth;  
+  }
+
+
+header{
+    background-image: url(imagenes/burbujas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin: 0;
+    position: fixed;
+}
+.navegacion{
+  display: flex;
+  justify-content: space-between;
+  padding: 3px;
+  margin: 0px 5px 0px 0px;
+}
+.navegacion p{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-left: 12px;
+  width: 40%;
+  font-size: 1.2em;
+}
+.navegacion nav {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  width: 65%;  
+}
+.navegacion a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px;
+  width: 25%;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+
+.principal{
+  display: flex;
+  width: 100%; 
+  margin: 0;
+  height: 630px;
+  background-image: url(imagenes/teacher.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.principal .nombre{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  text-align: center;
+}
+.principal .imagen{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  margin: 10px;
+}
+img{
+  border-radius: 50%;
+  width: 80%;
+}
+.nombre h1{
+ padding: 40px;
+ font-size: 6em;
+}
+.nombre p{
+  font-style: italic;
+  font-size: 1.5em;
+}
+
+
+.informacion{
+  background-image: url(imagenes/celeste.jpg);
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+}
+.informacion h1{
+  padding: 60px 0px 0px 0px;
+  font-size: 3em;
+  text-align: center;
+  background-color: rgba(96, 178, 211, 0.582); 
+  background-clip: content-box;
+}
+.datos{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  height: 560px;
+  padding-bottom: 80px;
+}
+.datos h3{
+  font-size: 1.9em;
+  text-align: center;
+  padding-top: 17px;
+}
+.datos p{
+  text-align: center;
+  font-size: 1.3em;
+}
+.datos button{
+  border-radius: 30px ;
+  border: none;
+  box-shadow:  1px 1px 9px 1px white;
+  cursor: pointer;
+  padding: 10px;
+}
+button:active {
+  background-color: #d1d8d2;
+  transform: translateY(2px);
+}
+
+
+.experiencia{
+  background-image: url(imagenes/pizarron\ verde.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.experiencia h1{
+  font-size: 3em;
+  text-align: center; 
+  padding: 60px 0px 0px 0px;
+  background-color: rgba(7, 61, 36, 0.473); 
+  background-clip: content-box;
+}
+#sub{
+  font-size: 1.6em;
+  margin-bottom: 25px;
+  text-align: center;
+  
+}
+.trabajo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 590px;
+  padding-bottom: 80px; 
+}
+.trabajo h2{
+  font-size: 2.1em;
+  text-align:center;
+  padding-bottom:25px ;
+  color: aliceblue;
+}
+.trabajo p{
+  margin: 0px 15px 30px 15px;
+  font-size: 1.3em;  
+}
+.contenido{
+  background-color: rgba(13, 155, 13, 0.767); 
+  overflow-y: auto;
+  background-size: 100% 100%;
+  height: 370px; 
+}
+.mas_btn{
+  display: none;
+}
+
+.trabajo .uno{
+  display: flex;
+  flex-direction:column;
+  text-align: justify;
+  margin: 30px;
+  width: 40%; 
+  border-radius: 2%;
+  box-shadow:1px 1px 9px 1px black;
+ }
+ #particular{
+  background-color: rgba(0, 0, 0, 0.671) ; 
+  border-radius: 6px 6px  0px 0px;
+}
+
+.trabajo .dos{
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  margin: 30px;
+  width: 40%;
+  box-shadow:1px 1px 9px 1px black;
+  border-radius: 2%;
+}
+#privado{
+  background-color: rgba(0, 0, 0, 0.671) ;
+  border-radius: 7px 7px  0px 0px;
+}
+
+.trabajo .tres{
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  margin: 30px;
+  width: 40%; 
+  box-shadow:1px 1px 9px 1px black;
+  border-radius: 2%;
+}
+#publica{
+  background-color: rgba(0, 0, 0, 0.671) ;
+  border-radius: 7px 7px  0px 0px;
+}
+
+
+.habilidades{
+    background-image: url(imagenes/blanco.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.habilidades h1{
+  font-size: 3em;
+  text-align: center; 
+  padding: 60px 0px 0px 0px;
+  background-color: rgba(196, 191, 167, 0.507); 
+  background-clip: content-box;
+}
+.habilidades p{
+  font-size: 2.1em;
+  text-align:center;
+  margin-top: 25px;
+  margin-bottom:25px ;
+}
+.habilidades div{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.2em;
+}
+#hab1{
+  width: 20%;
+  height: 120px;
+  border: 1px ;
+  background-color: rgba(100, 148, 237, 0.863);
+  margin: 3px;
+  box-shadow:  1px 1px 9px 1px cornflowerblue;
+}
+#hab2{
+  width: 40%;
+  height: 200px;
+  border: 1px ;
+  background-color: rgba(128, 255, 0, 0.726);
+  margin: 3px;
+  box-shadow:  1px 1px 9px 1px chartreuse;
+}
+#hab3{
+  width: 30%;
+  height: 180px;
+  border: 1px ;
+  background-color: rgba(255, 140, 0, 0.74);
+  margin: 3px;
+  box-shadow:  1px 1px 9px 1px darkorange;
+}
+#hab4{
+ width: 15%; 
+ height: 200px;
+ border: 1px ;
+ background-color: rgba(205, 92, 92, 0.795);
+ margin: 3px;
+ box-shadow:  1px 1px 9px 1px indianred;
+}
+
+#hab5{
+ width: 35%; 
+ height: 260px;
+ border: 1px ;
+ background-color: rgba(32, 178, 171, 0.836);
+ margin: 3px;
+ box-shadow:  1px 1px 9px 1px lightseagreen;
+}
+#hab6{
+ width: 40%; 
+ height: 200px;
+ border: 1px ;
+ background-color: rgba(218, 165, 32, 0.822); 
+ margin: 3px;
+ box-shadow:  1px 1px 9px 1px goldenrod;
+}
+
+@media screen and (max-width: 900px){
+  .navegacion a {
+    width: 100%;
+    margin: 4px 0px 5px 0px;
+  }
+  .navegacion p{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+  }
+  .navegacion nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+  .nombre h1{
+    padding: 40px;
+    font-size: 3.8em;
+  }
+ [class*=" bi-"]::before{
+  font-size: 60px;
+  text-align: center;
+  display:grid;
+  }
+.datos button {
+    border-radius: 30px;
+    padding: 10px 15px 10px 15px;
+  }
+.datos h3{
+  font-size: 1.3em;
+  text-align: center;
+  padding-top: 17px;
+  }
+.datos p{
+  text-align: center;
+  font-size: 1.1em;
+  padding-bottom: 10px;
+  }
+
+.trabajo {
+  flex-direction: column;
+  height: fit-content;
+  padding: 26px;
+  }
+.trabajo h2{
+  font-size: 1.5em;
+  width: 300px;
+  padding: 4px;
+  }
+.trabajo p{
+  margin: 0px 15px 30px 15px;
+  font-size: 1.3em;  
+  }
+.contenido{
+  display: none;
+  width: 100%;
+  width: 300px;
+  height: 100px;
+  }
+#mastxt_btn{
+  display: contents;
+  border: none;
+  cursor: pointer; 
+  }
+#mastxt_btn:hover{
+  box-shadow:none;
+  background-color: black;
+  color: #fff;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 2.05s;
+  }
+.mostar{
+  display: block;
+  text-align: center;
+  font-size: 0.62em;
+  }
+button{
+  text-align: center;
+  }
+.trabajo .uno {
+  margin: 12px;
+  width: auto;
+  border-radius: 5px;
+  }
+.trabajo .dos{
+  margin: 12px;
+  width: auto;
+  border-radius: 5px;
+  }
+.trabajo .tres {
+  margin: 12px;
+  width: auto;
+  border-radius: 5px;
+  }
+#hab4 h3{
+  font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 650px) {
+.principal{
+    background-size:cover; 
+  }
+.nombre h1{
+    padding: 40px;
+    font-size: 2.7em; 
+}
+.nombre p{
+  font-size: 1.3em;
+}
+.imagen{
+  padding-bottom: 55px;
+}
+.informacion{
+  height: auto;
+}
+.informacion h1{
+    font-size: 2.5em;
+  }
+.datos {
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  padding: 18px;
+}
+.datos h3{
+  font-size: 1.7em;
+  text-align: center;
+  padding-top: 17px;
+}
+.datos p{
+  text-align: center;
+  font-size: 1.3em;
+  padding-bottom: 10px;
+}
+.email{
+  padding: 5px;
+  width: 100%;
+  font-size: 0.9em;
+}
+.telefono{
+  padding: 5px;
+  width: 100%;
+  font-size: 0.9em;
+}
+.lugar{
+  padding: 5px;
+  width: 100%;
+  font-size: 0.9em;
+}
+.actual{
+  padding: 5px;
+  width: 100%;
+  font-size: 0.9em;
+}
+[class*=" bi-"]::before{
+  font-size: 40px;
+  text-align: center;
+  display:grid;
+  }
+.datos button {
+    border-radius: 30px;
+    padding: 5px 15px 5px 15px;
+}
+.trabajo {
+  flex-direction: column;
+  height: fit-content;
+  padding: 26px;
+}
+.trabajo h2{
+  font-size: 1.5em;
+  width: 300px;
+  padding: 4px;
+}
+.trabajo p{
+  margin: 0px 15px 30px 15px;
+  font-size: 1.3em;  
+}
+.contenido{
+  display: none;
+  width: 100%;
+  width: 300px;
+  height: 100px;
+}
+#mastxt_btn{
+  display: contents;
+  border: none;
+  cursor: pointer; 
+  }
+.mostar{
+  display: block;
+  text-align: center;
+  font-size: 0.55em;
+  }
+.trabajo .uno {
+  margin: 12px;
+    width: auto;
+    border-radius: 5px;
+}
+.trabajo .dos{
+  margin: 12px;
+  width: auto;
+  border-radius: 5px;
+}
+.trabajo .tres {
+  margin: 12px;
+  width: auto;
+  border-radius: 5px;
+}
+.habilidades{
+  height: auto;
+}
+.habilidades p{
+  font-size: 1.5em;
+  padding-top: 0px;
+  padding-bottom: 5px;
+  margin: 15px;
+}
+
+.habilidades .items{
+  display: grid;
+  grid-template-areas: 'asertiva asertiva asertiva' 'paciente organizada constante ' 'paciente digitales constante' 'creativa creativa creativa';
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75em;
+  margin-bottom: 5px;
+}
+
+
+#hab1{
+  grid-area: asertiva;
+  width: auto;
+  height: auto;
+  padding: 25px;
+}
+#hab2{
+  grid-area: paciente;
+  width: auto;
+  height: auto;
+  padding: 80px 0px 80px 0px;
+}
+#hab3{
+  grid-area: organizada;
+  width: auto;
+  height: auto;
+  padding: 28px;
+}
+#hab4{
+  grid-area: digitales;
+  width: auto;
+  height: auto;
+  padding: 28px;
+}
+#hab5{
+  grid-area: constante;
+  width: auto;
+  height: auto;
+  padding: 80px 0px 80px 0px;
+}
+#hab6{
+  grid-area: creativa;
+  width: auto;
+  height: auto;
+  padding: 25px;
+}
+
+}
